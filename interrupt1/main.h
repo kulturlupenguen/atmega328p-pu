@@ -1,8 +1,9 @@
 #define F_CPU 20000000UL // 20 MHZ
-#define __AVR__ATmega328p__
 #include <avr/io.h>
+#include <avr/interrupt.h>
 #include <util/delay.h>
-#include <stdlib.h>
+#include <inttypes.h>
+#include "functions.h"
 
 #define B0 DDB0
 #define B1 DDB1
