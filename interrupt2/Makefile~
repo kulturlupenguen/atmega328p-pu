@@ -166,9 +166,7 @@ hex: $(HEXTRG)
 writeflash: hex
 	$(AVRDUDE) -c $(AVRDUDE_PROGRAMMERID)   \
 	 -p $(PROGRAMMER_MCU) -P $(AVRDUDE_PORT) -b 19200       \
-	 -U flash:w:$(HEXROMTRG) -U lfuse:w:0xe3:m -U hfuse:w:0xd9:m
-
-
+	 -U flash:w:$(HEXROMTRG) -U lfuse:w:0xe4:m -U hfuse:w:0xd9:m
 
 
 
